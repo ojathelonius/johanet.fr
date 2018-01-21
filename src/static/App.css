@@ -1,0 +1,6 @@
+@import '~antd/dist/antd.css';
+
+/* Ant.design overrides, while waiting to eject the app to be able to work with LESS files */
+.ant-list-item-extra{
+    margin:auto !important;
+}
