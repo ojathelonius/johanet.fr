@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Row, Col } from 'antd';
 import { List } from 'antd';
 import CompanyLogo from 'static/images/company_logo.jpg';
+import KleeGroupLogo from 'static/images/kleegroup.jpg';
+import VwgoaLogo from 'static/images/vwgoa.jpg';
+import EpfLogo from 'static/images/epf.jpg';
 
 class ExperienceList extends Component {
     render() {
@@ -11,25 +14,23 @@ class ExperienceList extends Component {
 
         const listData = [
             {
-                href: 'http://google.fr',
-                title: 'Work Experience 1',
-                description: 'Stuff I did, in a nutshell',
-                content: 'More details about that stuff.',
-                image: CompanyLogo
+                title: 'Fullstack Software Engineer',
+                description: 'Klee Group',
+                content: 'Using stable technologies to build complex web applications.',
+                image: KleeGroupLogo
             },
             {
-                href: 'http://google.fr',
-                title: 'Work Experience 2',
-                description: 'Stuff I did, in a nutshell',
-                content: 'More details about that stuff.',
-                image: CompanyLogo
+                title: 'Fullstack Software Engineer',
+                description: 'Electronics Research Laboratory - Volkswagen Group of America',
+                content: 'Implementing a fleet management tool from scratch with React/Redux on top of JIRA.',
+                image: VwgoaLogo
             },
             {
-                href: 'http://google.fr',
-                title: 'Work Experience 3',
-                description: 'Stuff I did, in a nutshell',
-                content: 'More details about that stuff.',
-                image: CompanyLogo
+
+                title: 'MSc in Computer Science',
+                description: 'EPF - Graduate School of Engineering',
+                content: 'Information Technology and Software Engineering courses with a hint of management.',
+                image: EpfLogo
             }
 
         ];
@@ -49,7 +50,7 @@ class ExperienceList extends Component {
                                     extra={<img width={272} alt="Company logo" src={item.image} />}
                                 >
                                     <List.Item.Meta
-                                        title={<a href={item.href}>{item.title}</a>}
+                                        title={item.title}
                                         description={item.description}
                                     />
                                     {item.content}
